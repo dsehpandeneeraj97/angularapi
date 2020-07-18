@@ -1,0 +1,21 @@
+table {
+    margin-left: auto;
+    position: absolute;
+    width:100%;
+    text-align: center;
+    vertical-align: top;
+ }
+ .mat-colum-name_with_namespace{
+     text-align: justify;
+
+ }
+ .mat-colum-http_url_to_repo{
+     text-align: justify;
+ }
+ .mat-column-name{
+     text-align: justify;
+ }
+ .mat-column-description{
+     text-align: justify;
+ }
+ 

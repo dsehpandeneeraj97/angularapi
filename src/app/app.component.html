@@ -1,0 +1,37 @@
+<!-- <app-header></app-header>
+<app-address-form></app-address-form> -->
+
+
+<app-header></app-header>
+<!--Mat table for rendering the data fetched from Api Service-->
+<div>
+    <table mat-table [dataSource] = "dataSource"> 
+        <ng-container matColumnDef = "name_with_namespace">
+           <th mat-header-cell *matHeaderCellDef>NAME</th>
+           <td mat-cell *matCellDef = "let element"> {{element.name_with_namespace}} </td>
+        </ng-container>
+        <ng-container matColumnDef = "http_url_to_repo">
+           <th mat-header-cell *matHeaderCellDef>REPO</th>
+           <td mat-cell *matCellDef = "let element"> {{element.http_url_to_repo}} </td>
+        </ng-container>
+        <ng-container matColumnDef = "name">
+            <th mat-header-cell *matHeaderCellDef>NAME</th>
+            <td mat-cell *matCellDef = "let element"> {{element.name}} </td>
+         </ng-container>
+         <ng-container matColumnDef="favourite">
+            <mat-header-cell  *matHeaderCellDef > Favourite </mat-header-cell>
+            <mat-cell *matCellDef="let row" >
+                 <button mat-button (click)="addApi(row.name_with_namespace,row.http_url_to_repo,row.name)">Add Favourite</button>
+            </mat-cell>
+         
+
+         
+
+        <tr mat-header-row *matHeaderRowDef = "columndefs"></tr>
+        <tr mat-row *matRowDef = "let row; columns: columndefs;"></tr>
+    </ng-container>
+      </table>
+
+</div>
+
+ 

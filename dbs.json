@@ -1,0 +1,16 @@
+{
+  "favourite": [
+    {
+      "name_with_namespace": "Brillio_Java_FSD / DesignPatterns",
+      "http_url_to_repo": "https://gitlab.stackroute.in/brillio_java_fsd/designpatterns.git",
+      "name": "DesignPatterns",
+      "id": 3
+    },
+    {
+      "name_with_namespace": "neeraj.d / git_api_favourites_authenticate",
+      "http_url_to_repo": "https://gitlab.stackroute.in/neeraj.d/git_api_favourites_authenticate.git",
+      "name": "git_api_favourites_authenticate",
+      "id": 4
+    }
+  ]
+}
